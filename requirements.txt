@@ -1,0 +1,2 @@
+https://github.com/buddhhu/Telethon-Patch/archive/refs/heads/main.zip
+python-decouple
