@@ -8,6 +8,9 @@
 - [ ] Save Self-Destruct media
 - [ ] Better database management (without using any cloud database)
 
+## ⚠️Caution
+Your telegram account might get banned. I should not be held responsible for this. Just mail recover@telegram.org to unban your account. 
+
 <details>
 <summary>
 
