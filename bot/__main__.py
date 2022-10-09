@@ -41,9 +41,14 @@ async def get_approved_list():
 db.cache["database-id"] = client.loop.run_until_complete(get_database())
 client.loop.run_until_complete(get_approved_list())
 
+plugins = glob("bot/plugins/*.py")
+for plugin in plugins:
+    try:
+        plugin = plugin.replace(".py", "").replace("/", ".")
+        import_module(plugin)
+    except Exception as er:
+        log.expection(str(er))
 
-for plugins in glob.glob("bot/plugins/*.py"):
-    import_module(plugins[:-3].replace("/", "."))
 
 
 log.info("Started")
