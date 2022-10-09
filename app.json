@@ -10,12 +10,12 @@
     "repository": "https://github.com/buddhhu/NoDM",
     "env": {
         "API_ID": {
-            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "description": "Your api id, from my.telegram.org or @ScrapperRoBot.",
             "value": "",
             "required": false
         },
         "API_HASH": {
-            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "description": "Your api hash, from my.telegram.org or @ScrapperRoBot.",
             "value": "",
             "required": false
         },
