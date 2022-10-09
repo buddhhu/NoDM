@@ -4,6 +4,7 @@
 - [ ] Write better readme
 - [ ] Multi-platform Support
 - [x] [Termux Support](#termux)
+- [x] Heroku Support
 - [ ] Media support
 - [ ] Save Self-Destruct media
 - [ ] Better database management (without using any cloud database)
