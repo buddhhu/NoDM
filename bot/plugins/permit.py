@@ -2,6 +2,7 @@
 
 from telethon.tl.functions.contacts import BlockRequest
 from telethon.tl.functions.messages import ReportSpamRequest
+from telethon.utils import get_display_name
 
 from bot import db, message
 
@@ -38,7 +39,7 @@ async def inco_ming(event):
         return
     first_name = user.first_name
     last_name = user.last_name
-    fullname = first_name + " " + last_name if last_name else first_name
+    fullname = get_display_name(user)
     mention = f"[{fullname}](tg://user?id={user.id})"
     if db.get("dm-message"):
         await event.reply(
