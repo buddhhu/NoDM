@@ -11,6 +11,7 @@ class db:
             "delete-chat": True,
             "report": True,
             "mark-read": True,
+            "media-msg": None,
             "dm-limit": 3,
             "dm-message": "Hey {mention}\nDon't dm",
         }
