@@ -21,13 +21,11 @@ apply()
 v = 1.0
 start_time = time.time()
 
-if os.path.exists("logs.txt"):
-    os.remove("logs.txt")
 basicConfig(
     format="%(asctime)s || %(name)s [%(levelname)s] - %(message)s",
     level=INFO,
     datefmt="%m/%d/%Y, %H:%M:%S",
-    handlers=[FileHandler("logs.txt"), StreamHandler()],
+    handlers=[FileHandler("logs.txt", mode="w", encoding="utf-8"), StreamHandler()],
 )
 getLogger("Telethon").setLevel(WARNING)
 

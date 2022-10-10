@@ -1,0 +1,27 @@
+{
+    "name": "NoDM",
+    "description": "This bot enable PM permit in your Telegram account.",
+    "keywords": [
+        "Telethon",
+        "telegram",
+        "python",
+        "PMpermit"
+    ],
+    "repository": "https://github.com/buddhhu/NoDM",
+    "env": {
+        "API_ID": {
+            "description": "Your api id, from my.telegram.org or @ScrapperRoBot.",
+            "value": "",
+            "required": false
+        },
+        "API_HASH": {
+            "description": "Your api hash, from my.telegram.org or @ScrapperRoBot.",
+            "value": "",
+            "required": false
+        },
+        "SESSION": {
+            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
+            "value": ""
+        }
+    }
+}

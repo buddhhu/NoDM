@@ -42,6 +42,7 @@ db.cache["database-id"] = client.loop.run_until_complete(get_database())
 client.loop.run_until_complete(get_approved_list())
 
 
+
 for plugins in glob.glob("bot/plugins/*.py"):
     import_module(plugins[:-3].replace("/", "."))
 
