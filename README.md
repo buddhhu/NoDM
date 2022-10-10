@@ -47,6 +47,8 @@ python -m bot
 ```
 </details>
 
+### Deploy On Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 Made with turu lob 👻
 
