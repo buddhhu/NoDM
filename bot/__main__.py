@@ -12,7 +12,7 @@ true, false, null = True, False, None
 
 
 async def get_database():
-    msg = await client.get_messages("me", search=f"#NoDM", limit=1)
+    msg = await client.get_messages("me", search="#NoDM", limit=1)
     if msg.total == 0:
         mess = json.dumps(db.template, ensure_ascii=False, indent=1)
         msg = await client.send_message("me", f"#NoDM\n\n\n{mess}")
@@ -24,7 +24,10 @@ async def get_database():
 
 async def get_approved_list():
     msg = await client.get_messages(
-        "me", search=f"approved-list.txt", filter=InputMessagesFilterDocument(), limit=1
+        "me",
+        search="approved-list.txt",
+        filter=InputMessagesFilterDocument(),
+        limit=1,
     )
     if msg.total == 0:
         open("approved-list.txt", "w").write("{}")

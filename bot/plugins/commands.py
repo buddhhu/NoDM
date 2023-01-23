@@ -15,8 +15,7 @@ async def ping(event):
 
 @message("u(b|nblock)( (.*)|$)")
 async def unblock(event):
-    match = event.pattern_match.group(1)
-    if match:
+    if match := event.pattern_match.group(1):
         match = [int(_) if _.isdigit() else str(_) for _ in match.strip().split(" ")]
         user = []
         for _ in match:
@@ -43,8 +42,7 @@ async def unblock(event):
 
 @message("b(lock|)( (.*)|$)")
 async def block(event):
-    match = event.pattern_match.group(1)
-    if match:
+    if match := event.pattern_match.group(1):
         match = [int(_) if _.isdigit() else str(_) for _ in match.strip().split(" ")]
         user = []
         for _ in match:
@@ -72,8 +70,7 @@ async def block(event):
 
 @message("a(p|pprove|)( (.*)|$)")
 async def approve(event):
-    match = event.pattern_match.group(1)
-    if match:
+    if match := event.pattern_match.group(1):
         match = [int(_) if _.isdigit() else str(_) for _ in match.strip().split(" ")]
         user = []
         for _ in match:
@@ -97,8 +94,7 @@ async def approve(event):
 
 @message("d(a|isapprove|)( (.*)|$)")
 async def dapprove(event):
-    match = event.pattern_match.group(1)
-    if match:
+    if match := event.pattern_match.group(1):
         match = [int(_) if _.isdigit() else str(_) for _ in match.strip().split(" ")]
         user = []
         for _ in match:
